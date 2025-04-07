@@ -24,7 +24,7 @@
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>5.5.0</version>
+            <version>5.5.1</version>
             <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
@@ -40,6 +40,21 @@
             <version>7.10.1</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.27.3</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
-
+    <build>
+    <plugins>
+    <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.5.3</version>
+    </plugin>
+    </plugins>
+    </build>
 </project>
